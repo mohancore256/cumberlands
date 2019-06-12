@@ -1,5 +1,6 @@
 package edu.cumberlands.student.studentmanagment.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +31,13 @@ public class StudentService {
 	
 	public void deleteStudent(Long studentId) {
 		 studentRepository.deleteById(studentId);
+	}
+	public List<Student> getAllStudent(){
+		return studentRepository.findAll();
+	}
+	
+	public List<Student> searchStudent(Student student){
+		return studentRepository.searchStudent(student.getFirstName(), student.getLastName(), student.geteMail());
 	}
 
 }

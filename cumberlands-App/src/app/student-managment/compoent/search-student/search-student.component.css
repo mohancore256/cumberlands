@@ -1,0 +1,16 @@
+.view{
+    width: 5%;
+     height : auto;
+     padding-right: 2%;
+}
+
+.edit{
+    width: 5%;
+     height : auto;
+     padding-right: 2%;
+}
+
+.delect{
+    width: 3%;
+     height : auto;
+}

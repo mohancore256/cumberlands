@@ -1,0 +1,55 @@
+<div class="container">
+  <form id="courseRegistration" [formGroup]="courseRegistration" (onSubmit) ="onCourseRegistration()">
+
+    <div class="row">
+      <h3> Course Registration</h3>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-4"><label for="name">Name:</label></div>
+          <div class="col-lg-8"><input formControlName ="name" type="text"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4"><label for="duration">Duration:</label></div>
+          <div class="col-lg-8"><input formControlName="duration" type="text"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4"><label for="cost">Cost:</label></div>
+          <div class="col-lg-8"><input formControlName ="cost" type="text"></div>
+        </div>
+       
+
+      </div>
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-lg-4"><label for="startDate">Start Date:</label></div>
+          <div class="col-lg-8"><input formControlName ="startDate" type="text"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4"><label for="endDate">End Date:</label></div>
+          <div class="col-lg-8"><input formControlName="endDate" type="text"></div>
+        </div>  
+    </div>
+       
+      </div>
+      <div class="row">
+          <div class="col-lg-4"></div>
+      
+          <div class="col-lg-8">
+            <div class="buttons"><button>RESET</button></div>
+            <div class="buttons"><button>SAVE</button></div>
+            <div class="buttons"><button>CANCEL</button></div>
+          </div>
+      
+        </div>
+  </form>
+
+</div>
+
